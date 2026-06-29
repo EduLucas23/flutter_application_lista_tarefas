@@ -1,17 +1,31 @@
-# flutter_application_lista_tarefas
+# Lista de Tarefas
 
-A new Flutter project.
+Aplicativo Flutter simples para cadastro de tarefas com CRUD local usando SQLite.
 
-## Getting Started
+## Recursos
 
-This project is a starting point for a Flutter application.
+- Criar tarefa
+- Listar tarefas
+- Ver detalhes por ID
+- Editar tarefa
+- Excluir tarefa com confirmacao
+- Persistir dados em banco SQLite local
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencias principais
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- sqflite
+- sqflite_common_ffi
+- sqlite3_flutter_libs
+- path
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Como executar
+
+Para testar com SQLite no Windows:
+
+```bash
+flutter pub get
+flutter run -d windows
+```
+
+O Flutter Web/Chrome nao salva usando sqflite. Para testar persistencia local,
+use Windows, Android ou iOS.
